@@ -1,0 +1,63 @@
+/* The Badge */
+#SIE-Badge{
+    display: block;
+    position: relative;    
+    width: 100%;
+}
+
+#SIE-Badge .sie-body{
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+	justify-content: center;
+}
+
+
+#SIE-Badge .sie-discount-content{
+	margin-left: 5px;
+	text-decoration: underline; 
+}
+
+#SIE-Badge > #ifrm-badge{
+    border: none;
+    height: 35px;
+    width: 100%;
+}
+
+/* to maintain modal position on-page without button popup trigger */    
+.sie-modal {
+	position: relative;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	z-index: 1;
+	display: block;	
+}  
+/* styles for every modal begin */
+.modal-content {
+	border: none;
+	box-shadow: 0 14px 25px rgb(0 0 0 / 16%);
+}
+
+/* shake */
+.shake {
+	animation: shake-animation 3.72s ease infinite;
+	transform-origin: 50% 50%;
+  }
+  .element {
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	background: red;
+  }
+  @keyframes shake-animation {
+	 0% { transform:translate(0,0) }
+	1.78571% { transform:translate(5px,0) }
+	3.57143% { transform:translate(0,0) }
+	5.35714% { transform:translate(5px,0) }
+	7.14286% { transform:translate(0,0) }
+	8.92857% { transform:translate(5px,0) }
+	10.71429% { transform:translate(0,0) }
+	100% { transform:translate(0,0) }
+  }

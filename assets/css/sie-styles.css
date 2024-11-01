@@ -1,0 +1,127 @@
+/* The Badge */
+
+@font-face {
+    font-family: roboto_font;
+    src:url("../fonts/roboto/Roboto-Regular.ttf");
+}
+
+.robot-font{
+    font-family: roboto_font;
+}
+
+#SIE-Badge{
+    display: block;
+    /* position: relative;
+    margin-top: 60px; */
+    width: 100%;
+	clear: both;
+	margin-top:30px;
+}
+
+.sie-body{
+   /* display: flex;
+    flex-wrap: wrap;*/
+    cursor: pointer;
+	margin-top:.5em;
+}
+
+
+.sie-discount-content span{
+	margin-left: 3px;
+	/*position:relative;
+	top:8px;*/
+	text-decoration: underline; 
+	font-size: 15px;
+	font-family: roboto_font;	
+	text-decoration-thickness: 2px;
+	text-underline-position: under;
+}
+
+#SIE-Badge > #ifrm-badge{
+    border: none;
+    height: 35px;
+    width: 100%;
+}
+
+#SIE-Modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 9999999999; /* Sit on top */
+	padding-top: 30px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	opacity: 100;
+}
+
+/* to maintain modal position on-page without button popup trigger */    
+.modal {
+	position: relative;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	z-index: 1;
+	display: block;
+}  
+/* styles for every modal begin */
+.modal-content {
+	border: none;
+	box-shadow: 0 14px 25px rgb(0 0 0 / 16%);
+}
+
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 140px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -75px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+.btn-sie-success {
+    color: #ffffff;
+	background: #28a745;
+    border-color: #28a745;
+}
+
+.sie-popup-close {
+	background:none!important;
+}
+.single_add_to_cart_button{
+	margin-bottom:7px!important;
+}
